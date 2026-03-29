@@ -9,8 +9,7 @@ st.set_page_config(page_title="ODA Dashboard", layout="wide")
 # ====================================
 @st.cache_data
 def load_data():
-    # If you use zip, replace with: pd.read_csv("Table1_Data.zip")
-    df = pd.read_csv("Table1_Data.csv")
+   df = pd.read_csv("Table1_Data.zip")
     return df
 
 df = load_data()
